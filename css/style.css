@@ -53,3 +53,15 @@ body {
 .command {
   color: #78dce8;
 }
+
+.section-title {
+  color: #78dce8;
+  font-weight: bold;
+  margin-top: 10px;
+  display: block;
+}
+
+.description {
+  display: block;
+  margin-left: 20px;
+}
