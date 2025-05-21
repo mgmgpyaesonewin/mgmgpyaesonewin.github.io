@@ -65,3 +65,27 @@ body {
   display: block;
   margin-left: 20px;
 }
+
+/* Styles for the typewriter animation */
+.cursor {
+  color: #00ff00; /* Green cursor as requested */
+  animation: blink-animation 1s step-end infinite;
+  /* Using opacity might be smoother than color change if text color varies */
+}
+
+@keyframes blink-animation {
+  from, to {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/* .typing-active could be used for additional styling if needed, */
+/* for example, to ensure the line has a minimum height or specific background. */
+/* For now, it primarily serves to scope the cursor or active typing process. */
+
+/* .typewriter-text elements are spans. If they were block elements, */
+/* min-height might be useful. As inline-block or spans within pre, */
+/* they should flow naturally with the text content added by JS. */
